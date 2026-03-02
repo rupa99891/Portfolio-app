@@ -37,7 +37,9 @@ const Portfolio = () => {
     </div>
   );
 
-  const { profile, skills, projects } = data;
+const profile = data?.profile || {};
+const skills = data?.skills || [];
+const projects = data?.projects || [];
 
   // Group skills by category for display
     const skillsByCategory = (skills || []).reduce((acc, skill) => {
