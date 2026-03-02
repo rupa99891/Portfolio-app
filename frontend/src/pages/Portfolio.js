@@ -40,7 +40,7 @@ const Portfolio = () => {
   const { profile, skills, projects } = data;
 
   // Group skills by category for display
-  const skillsByCategory = skills.reduce((acc, skill) => {
+    const skillsByCategory = (skills || []).reduce((acc, skill) => {
     const cat = skill.category || 'General';
     if (!acc[cat]) acc[cat] = [];
     acc[cat].push(skill);
