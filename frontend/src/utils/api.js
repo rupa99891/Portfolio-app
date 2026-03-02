@@ -7,7 +7,7 @@ import axios from 'axios';
 
 // Create a custom axios instance
 const api = axios.create({
-  baseURL: '/api', // Uses the proxy in package.json
+ baseURL: 'https://portfolio-backend-1pav.onrender.com/api',// Uses the proxy in package.json
 });
 
 // ============================================================
