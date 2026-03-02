@@ -83,7 +83,7 @@ const Portfolio = () => {
       </section>
 
       {/* ============== SKILLS SECTION ============== */}
-      {skills.length > 0 && (
+      {skills && skills.length > 0 && (
         <section className="portfolio-section">
           <div className="portfolio-container">
             <h2 className="section-title">⚡ Skills</h2>
@@ -113,7 +113,7 @@ const Portfolio = () => {
       )}
 
       {/* ============== PROJECTS SECTION ============== */}
-      {projects.length > 0 && (
+      {projects && projects.length > 0 && (
         <section className="portfolio-section alt-bg">
           <div className="portfolio-container">
             <h2 className="section-title">🚀 Projects</h2>
